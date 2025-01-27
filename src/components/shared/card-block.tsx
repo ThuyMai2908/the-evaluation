@@ -21,7 +21,7 @@ const CardMediaWithText: React.FC<CardProps> = ({
 }) => {
   return (
     <div className={cn("relative overflow-hidden group ", className)}>
-      <div className="relative aspect-[4/5] overflow-hidden rounded-[28px]">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem]">
         <Image
           src={imageUrl || ""}
           width={512}

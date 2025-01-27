@@ -72,7 +72,7 @@ const Concerns = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <motion.section className=" py-16 md:py-[112px]">
+    <motion.section className=" py-16 md:py-112">
       <div className="container">
         <motion.div
           className="mb-12 md:mb-20 gap-6 flex flex-col"

@@ -85,6 +85,7 @@ export default {
       },
       padding: {
         "60": "3.75rem",
+        "112": "7rem",
       },
       lineHeight: {
         1.2: "1.2",

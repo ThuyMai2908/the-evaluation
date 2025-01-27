@@ -60,9 +60,9 @@ export default function Feedback({
   const { children, ...buttonProps } = action || {};
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <section className="bg-lightBrown w-full py-16 md:py-[112px]">
+    <section className="bg-lightBrown w-full py-16 md:py-112">
       <BlockStack
-        className="container relative gap-12 lg:gap-[80px]"
+        className="container relative gap-12 lg:gap-[5rem]"
         alignHorizontal="between"
         alignVertical="center"
       >

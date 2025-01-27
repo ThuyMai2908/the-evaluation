@@ -30,7 +30,7 @@ const TextWithMedia: React.FC<TextMediaCardProps> = ({
       </div>
       {imageUrl && (
         <div
-          className={`absolute bottom-8 right-6 aspect-[288/234] w-[45%] max-w-[230px] overflow-hidden rounded-lg object-cover xl:bottom-[60px] xl:right-[60px] xl:max-w-[288px]`}
+          className={`absolute bottom-8 right-6 aspect-[288/234] w-[45%] max-w-[14.375rem] overflow-hidden rounded-lg object-cover xl:bottom-[3.75rem] xl:right-[3.75rem] xl:max-w-[14.25rem]`}
         >
           <Image
             src={imageUrl}

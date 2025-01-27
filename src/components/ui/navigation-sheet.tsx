@@ -68,7 +68,7 @@ export function NavigationSheet({ open }: { open: boolean }) {
             {ROUTERS.map((item, _) => (
               <li key={item?.id}>
                 <Link
-                  className="text-3xl text-brownMenu hover:opacity-70 md:text-[64px] leading-1.2 font-medium"
+                  className="text-3xl text-brownMenu hover:opacity-70 md:text-[4rem] leading-1.2 font-medium"
                   href="/"
                 >
                   {item?.title}
