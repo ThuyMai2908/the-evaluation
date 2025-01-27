@@ -14,7 +14,7 @@ export const neueMontrealFontMedium = localFont({
   display: "swap",
   src: [
     {
-      path: "./fonts/neue-montreal/PPNeueMontreal-Medium.otf",
+      path: "./fonts/neue-montreal/NeueMontreal-Medium.otf",
       weight: "500",
     },
   ],

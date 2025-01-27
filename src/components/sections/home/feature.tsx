@@ -1,8 +1,9 @@
-import Section from "@/components/common/section";
+"use client";
+
 import InlineGrid from "@/components/layouts/inline-grid";
 import TextWithMedia from "@/components/shared/text-media";
 import { TextMediaCardProps } from "@/types/block";
-import React from "react";
+import { motion } from "framer-motion";
 
 const PRODUCT_DATA: TextMediaCardProps[] = [
   {
@@ -18,7 +19,13 @@ const PRODUCT_DATA: TextMediaCardProps[] = [
 ];
 const Feature = () => {
   return (
-    <section className="container text-brown py-16 md:py-28">
+    <motion.section
+      className="container text-brown py-16 md:py-28"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <InlineGrid
         className="min-h-full border-brown border-t-0 border-r-0 md:border-t md:border-r h-full gap-6 md:gap-x-0"
         columns={{ default: 1, md: 2 }}
@@ -34,7 +41,7 @@ const Feature = () => {
           />
         ))}
       </InlineGrid>
-    </section>
+    </motion.section>
   );
 };
 

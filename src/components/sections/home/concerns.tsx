@@ -1,6 +1,5 @@
 "use client";
 
-import BlockStack from "@/components/layouts/block-stack";
 import FlexRow from "@/components/layouts/flex-row";
 import CardMediaWithText from "@/components/shared/card-block";
 import {
@@ -12,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { Typography } from "@/components/ui/typography";
 import { TextMediaCardProps } from "@/types/block";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const CONCERN_DATA: TextMediaCardProps[] = [
@@ -72,16 +72,22 @@ const Concerns = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className=" py-16 md:py-[112px]">
+    <motion.section className=" py-16 md:py-[112px]">
       <div className="container">
-        <BlockStack className="mb-12 md:mb-20" gap={6}>
+        <motion.div
+          className="mb-12 md:mb-20 gap-6 flex flex-col"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <Typography variant={"titleSection"} as="h2">
             Concerns
           </Typography>
           <Typography as="p" variant={"body"}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Typography>
-        </BlockStack>
+        </motion.div>
 
         <Carousel
           opts={{
@@ -134,7 +140,7 @@ const Concerns = () => {
           </FlexRow>
         </Carousel>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

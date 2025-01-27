@@ -16,7 +16,6 @@ const Section: React.FC<SectionProps> = ({
   children,
   background,
   className,
-  //   marginBottom = { base: 16, xl: 28 },
   gap,
   container = false,
   ...restProps
@@ -26,7 +25,6 @@ const Section: React.FC<SectionProps> = ({
       className={cn(
         "flex flex-col w-full",
         container && "container",
-        // getResponsiveProps("mb", marginBottom),
         getResponsiveProps("gap", gap),
         className
       )}
